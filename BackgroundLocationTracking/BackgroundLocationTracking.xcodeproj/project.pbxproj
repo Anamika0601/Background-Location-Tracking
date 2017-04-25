@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B1C7BCD9ECEF5069EA9A02 /* libPods-BackgroundLocationTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5504AF4524E05440E63196 /* libPods-BackgroundLocationTracking.a */; };
+		A36A7DC01EADCCFC00BEF4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36A7DBF1EADCCFC00BEF4CA /* Assets.xcassets */; };
+		A36A7DC31EADE67000BEF4CA /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A36A7DC21EADE67000BEF4CA /* AppConstants.m */; };
+		A3B0BEEF1EACFA3800684AF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B0BEEE1EACFA3800684AF2 /* main.m */; };
+		A3B0BEF21EACFA3800684AF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B0BEF11EACFA3800684AF2 /* AppDelegate.m */; };
+		A3B0BEF51EACFA3800684AF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B0BEF41EACFA3800684AF2 /* ViewController.m */; };
+		A3B0BEF81EACFA3800684AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B0BEF61EACFA3800684AF2 /* Main.storyboard */; };
+		A3B0BEFD1EACFA3800684AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B0BEFB1EACFA3800684AF2 /* LaunchScreen.storyboard */; };
+		A3B0BF081EACFA3800684AF2 /* BackgroundLocationTrackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B0BF071EACFA3800684AF2 /* BackgroundLocationTrackingTests.m */; };
+		A3B0BF131EACFA3800684AF2 /* BackgroundLocationTrackingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B0BF121EACFA3800684AF2 /* BackgroundLocationTrackingUITests.m */; };
+		A3B0BF221EACFEC500684AF2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B0BF211EACFEC500684AF2 /* MapKit.framework */; };
+		A3B0BF241EACFED000684AF2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B0BF231EACFED000684AF2 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3B0BF041EACFA3800684AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B0BEE21EACFA3800684AF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3B0BEE91EACFA3800684AF2;
+			remoteInfo = BackgroundLocationTracking;
+		};
+		A3B0BF0F1EACFA3800684AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B0BEE21EACFA3800684AF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3B0BEE91EACFA3800684AF2;
+			remoteInfo = BackgroundLocationTracking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		092E2F823B067D66F7ADCEAD /* Pods-BackgroundLocationTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackgroundLocationTracking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BackgroundLocationTracking/Pods-BackgroundLocationTracking.debug.xcconfig"; sourceTree = "<group>"; };
+		1C68F9A599A65591432D21B0 /* Pods-BackgroundLocationTracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackgroundLocationTracking.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackgroundLocationTracking/Pods-BackgroundLocationTracking.release.xcconfig"; sourceTree = "<group>"; };
+		2D5504AF4524E05440E63196 /* libPods-BackgroundLocationTracking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BackgroundLocationTracking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36A7DBF1EADCCFC00BEF4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A36A7DC11EADE67000BEF4CA /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		A36A7DC21EADE67000BEF4CA /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
+		A3B0BEEA1EACFA3800684AF2 /* BackgroundLocationTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundLocationTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B0BEEE1EACFA3800684AF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3B0BEF01EACFA3800684AF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3B0BEF11EACFA3800684AF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3B0BEF31EACFA3800684AF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A3B0BEF41EACFA3800684AF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A3B0BEF71EACFA3800684AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3B0BEFC1EACFA3800684AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3B0BEFE1EACFA3800684AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B0BF031EACFA3800684AF2 /* BackgroundLocationTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundLocationTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B0BF071EACFA3800684AF2 /* BackgroundLocationTrackingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundLocationTrackingTests.m; sourceTree = "<group>"; };
+		A3B0BF091EACFA3800684AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B0BF0E1EACFA3800684AF2 /* BackgroundLocationTrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundLocationTrackingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B0BF121EACFA3800684AF2 /* BackgroundLocationTrackingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundLocationTrackingUITests.m; sourceTree = "<group>"; };
+		A3B0BF141EACFA3800684AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B0BF211EACFEC500684AF2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A3B0BF231EACFED000684AF2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3B0BEE71EACFA3800684AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B0BF241EACFED000684AF2 /* CoreLocation.framework in Frameworks */,
+				A3B0BF221EACFEC500684AF2 /* MapKit.framework in Frameworks */,
+				03B1C7BCD9ECEF5069EA9A02 /* libPods-BackgroundLocationTracking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B0BF001EACFA3800684AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B0BF0B1EACFA3800684AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23962AA35F5E93A9ACA9419B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				092E2F823B067D66F7ADCEAD /* Pods-BackgroundLocationTracking.debug.xcconfig */,
+				1C68F9A599A65591432D21B0 /* Pods-BackgroundLocationTracking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3B0BEE11EACFA3800684AF2 = {
+			isa = PBXGroup;
+			children = (
+				A3B0BEEC1EACFA3800684AF2 /* BackgroundLocationTracking */,
+				A3B0BF061EACFA3800684AF2 /* BackgroundLocationTrackingTests */,
+				A3B0BF111EACFA3800684AF2 /* BackgroundLocationTrackingUITests */,
+				A3B0BEEB1EACFA3800684AF2 /* Products */,
+				A3B0BF201EACFEC400684AF2 /* Frameworks */,
+				23962AA35F5E93A9ACA9419B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A3B0BEEB1EACFA3800684AF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0BEEA1EACFA3800684AF2 /* BackgroundLocationTracking.app */,
+				A3B0BF031EACFA3800684AF2 /* BackgroundLocationTrackingTests.xctest */,
+				A3B0BF0E1EACFA3800684AF2 /* BackgroundLocationTrackingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3B0BEEC1EACFA3800684AF2 /* BackgroundLocationTracking */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0BEF01EACFA3800684AF2 /* AppDelegate.h */,
+				A3B0BEF11EACFA3800684AF2 /* AppDelegate.m */,
+				A3B0BEF31EACFA3800684AF2 /* ViewController.h */,
+				A3B0BEF41EACFA3800684AF2 /* ViewController.m */,
+				A3B0BEF61EACFA3800684AF2 /* Main.storyboard */,
+				A36A7DC11EADE67000BEF4CA /* AppConstants.h */,
+				A36A7DC21EADE67000BEF4CA /* AppConstants.m */,
+				A36A7DBF1EADCCFC00BEF4CA /* Assets.xcassets */,
+				A3B0BEFB1EACFA3800684AF2 /* LaunchScreen.storyboard */,
+				A3B0BEFE1EACFA3800684AF2 /* Info.plist */,
+				A3B0BEED1EACFA3800684AF2 /* Supporting Files */,
+			);
+			path = BackgroundLocationTracking;
+			sourceTree = "<group>";
+		};
+		A3B0BEED1EACFA3800684AF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0BEEE1EACFA3800684AF2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3B0BF061EACFA3800684AF2 /* BackgroundLocationTrackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0BF071EACFA3800684AF2 /* BackgroundLocationTrackingTests.m */,
+				A3B0BF091EACFA3800684AF2 /* Info.plist */,
+			);
+			path = BackgroundLocationTrackingTests;
+			sourceTree = "<group>";
+		};
+		A3B0BF111EACFA3800684AF2 /* BackgroundLocationTrackingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0BF121EACFA3800684AF2 /* BackgroundLocationTrackingUITests.m */,
+				A3B0BF141EACFA3800684AF2 /* Info.plist */,
+			);
+			path = BackgroundLocationTrackingUITests;
+			sourceTree = "<group>";
+		};
+		A3B0BF201EACFEC400684AF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0BF231EACFED000684AF2 /* CoreLocation.framework */,
+				A3B0BF211EACFEC500684AF2 /* MapKit.framework */,
+				2D5504AF4524E05440E63196 /* libPods-BackgroundLocationTracking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3B0BEE91EACFA3800684AF2 /* BackgroundLocationTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B0BF171EACFA3800684AF2 /* Build configuration list for PBXNativeTarget "BackgroundLocationTracking" */;
+			buildPhases = (
+				92006925FE3016BDA0E10DD4 /* [CP] Check Pods Manifest.lock */,
+				A3B0BEE61EACFA3800684AF2 /* Sources */,
+				A3B0BEE71EACFA3800684AF2 /* Frameworks */,
+				A3B0BEE81EACFA3800684AF2 /* Resources */,
+				FB61A64E6F6A27412D834744 /* [CP] Embed Pods Frameworks */,
+				78D3CCFCAE114DCCD18BFCA4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BackgroundLocationTracking;
+			productName = BackgroundLocationTracking;
+			productReference = A3B0BEEA1EACFA3800684AF2 /* BackgroundLocationTracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3B0BF021EACFA3800684AF2 /* BackgroundLocationTrackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B0BF1A1EACFA3800684AF2 /* Build configuration list for PBXNativeTarget "BackgroundLocationTrackingTests" */;
+			buildPhases = (
+				A3B0BEFF1EACFA3800684AF2 /* Sources */,
+				A3B0BF001EACFA3800684AF2 /* Frameworks */,
+				A3B0BF011EACFA3800684AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3B0BF051EACFA3800684AF2 /* PBXTargetDependency */,
+			);
+			name = BackgroundLocationTrackingTests;
+			productName = BackgroundLocationTrackingTests;
+			productReference = A3B0BF031EACFA3800684AF2 /* BackgroundLocationTrackingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3B0BF0D1EACFA3800684AF2 /* BackgroundLocationTrackingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B0BF1D1EACFA3800684AF2 /* Build configuration list for PBXNativeTarget "BackgroundLocationTrackingUITests" */;
+			buildPhases = (
+				A3B0BF0A1EACFA3800684AF2 /* Sources */,
+				A3B0BF0B1EACFA3800684AF2 /* Frameworks */,
+				A3B0BF0C1EACFA3800684AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3B0BF101EACFA3800684AF2 /* PBXTargetDependency */,
+			);
+			name = BackgroundLocationTrackingUITests;
+			productName = BackgroundLocationTrackingUITests;
+			productReference = A3B0BF0E1EACFA3800684AF2 /* BackgroundLocationTrackingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3B0BEE21EACFA3800684AF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Anamika Sharma";
+				TargetAttributes = {
+					A3B0BEE91EACFA3800684AF2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6MY2496Q2W;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					A3B0BF021EACFA3800684AF2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6MY2496Q2W;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A3B0BEE91EACFA3800684AF2;
+					};
+					A3B0BF0D1EACFA3800684AF2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6MY2496Q2W;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A3B0BEE91EACFA3800684AF2;
+					};
+				};
+			};
+			buildConfigurationList = A3B0BEE51EACFA3800684AF2 /* Build configuration list for PBXProject "BackgroundLocationTracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3B0BEE11EACFA3800684AF2;
+			productRefGroup = A3B0BEEB1EACFA3800684AF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3B0BEE91EACFA3800684AF2 /* BackgroundLocationTracking */,
+				A3B0BF021EACFA3800684AF2 /* BackgroundLocationTrackingTests */,
+				A3B0BF0D1EACFA3800684AF2 /* BackgroundLocationTrackingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3B0BEE81EACFA3800684AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B0BEFD1EACFA3800684AF2 /* LaunchScreen.storyboard in Resources */,
+				A36A7DC01EADCCFC00BEF4CA /* Assets.xcassets in Resources */,
+				A3B0BEF81EACFA3800684AF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B0BF011EACFA3800684AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B0BF0C1EACFA3800684AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78D3CCFCAE114DCCD18BFCA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BackgroundLocationTracking/Pods-BackgroundLocationTracking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92006925FE3016BDA0E10DD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB61A64E6F6A27412D834744 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BackgroundLocationTracking/Pods-BackgroundLocationTracking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3B0BEE61EACFA3800684AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B0BEF51EACFA3800684AF2 /* ViewController.m in Sources */,
+				A3B0BEF21EACFA3800684AF2 /* AppDelegate.m in Sources */,
+				A3B0BEEF1EACFA3800684AF2 /* main.m in Sources */,
+				A36A7DC31EADE67000BEF4CA /* AppConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B0BEFF1EACFA3800684AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B0BF081EACFA3800684AF2 /* BackgroundLocationTrackingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B0BF0A1EACFA3800684AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B0BF131EACFA3800684AF2 /* BackgroundLocationTrackingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3B0BF051EACFA3800684AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3B0BEE91EACFA3800684AF2 /* BackgroundLocationTracking */;
+			targetProxy = A3B0BF041EACFA3800684AF2 /* PBXContainerItemProxy */;
+		};
+		A3B0BF101EACFA3800684AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3B0BEE91EACFA3800684AF2 /* BackgroundLocationTracking */;
+			targetProxy = A3B0BF0F1EACFA3800684AF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3B0BEF61EACFA3800684AF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3B0BEF71EACFA3800684AF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3B0BEFB1EACFA3800684AF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3B0BEFC1EACFA3800684AF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3B0BF151EACFA3800684AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3B0BF161EACFA3800684AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3B0BF181EACFA3800684AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 092E2F823B067D66F7ADCEAD /* Pods-BackgroundLocationTracking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				INFOPLIST_FILE = BackgroundLocationTracking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3B0BF191EACFA3800684AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C68F9A599A65591432D21B0 /* Pods-BackgroundLocationTracking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				INFOPLIST_FILE = BackgroundLocationTracking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A3B0BF1B1EACFA3800684AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				INFOPLIST_FILE = BackgroundLocationTrackingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackgroundLocationTracking.app/BackgroundLocationTracking";
+			};
+			name = Debug;
+		};
+		A3B0BF1C1EACFA3800684AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				INFOPLIST_FILE = BackgroundLocationTrackingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackgroundLocationTracking.app/BackgroundLocationTracking";
+			};
+			name = Release;
+		};
+		A3B0BF1E1EACFA3800684AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				INFOPLIST_FILE = BackgroundLocationTrackingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTrackingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BackgroundLocationTracking;
+			};
+			name = Debug;
+		};
+		A3B0BF1F1EACFA3800684AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				INFOPLIST_FILE = BackgroundLocationTrackingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTrackingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BackgroundLocationTracking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3B0BEE51EACFA3800684AF2 /* Build configuration list for PBXProject "BackgroundLocationTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B0BF151EACFA3800684AF2 /* Debug */,
+				A3B0BF161EACFA3800684AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B0BF171EACFA3800684AF2 /* Build configuration list for PBXNativeTarget "BackgroundLocationTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B0BF181EACFA3800684AF2 /* Debug */,
+				A3B0BF191EACFA3800684AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B0BF1A1EACFA3800684AF2 /* Build configuration list for PBXNativeTarget "BackgroundLocationTrackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B0BF1B1EACFA3800684AF2 /* Debug */,
+				A3B0BF1C1EACFA3800684AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B0BF1D1EACFA3800684AF2 /* Build configuration list for PBXNativeTarget "BackgroundLocationTrackingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B0BF1E1EACFA3800684AF2 /* Debug */,
+				A3B0BF1F1EACFA3800684AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3B0BEE21EACFA3800684AF2 /* Project object */;
+}

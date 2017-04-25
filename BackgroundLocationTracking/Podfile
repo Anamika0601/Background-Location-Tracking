@@ -1,0 +1,4 @@
+source 'https://github.com/CocoaPods/Specs.git'
+target 'BackgroundLocationTracking' do
+  pod 'GoogleMaps'
+end
