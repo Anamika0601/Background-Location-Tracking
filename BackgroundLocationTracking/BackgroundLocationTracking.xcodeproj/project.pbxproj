@@ -247,7 +247,6 @@
 				TargetAttributes = {
 					A3B0BEE91EACFA3800684AF2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6MY2496Q2W;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -257,13 +256,11 @@
 					};
 					A3B0BF021EACFA3800684AF2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6MY2496Q2W;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A3B0BEE91EACFA3800684AF2;
 					};
 					A3B0BF0D1EACFA3800684AF2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6MY2496Q2W;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A3B0BEE91EACFA3800684AF2;
 					};
@@ -523,7 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackgroundLocationTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTracking;
@@ -537,7 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackgroundLocationTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTracking;
@@ -549,7 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackgroundLocationTrackingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTrackingTests;
@@ -562,7 +559,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackgroundLocationTrackingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTrackingTests;
@@ -574,7 +571,7 @@
 		A3B0BF1E1EACFA3800684AF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackgroundLocationTrackingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTrackingUITests;
@@ -586,7 +583,7 @@
 		A3B0BF1F1EACFA3800684AF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 6MY2496Q2W;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackgroundLocationTrackingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Anamika.BackgroundLocationTrackingUITests;
