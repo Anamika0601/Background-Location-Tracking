@@ -31,6 +31,7 @@
     GMSMapView* googleMap;
     
     __weak IBOutlet UILabel *timeLabel;
+    BOOL isNavigating;
 }
 
 - (void)viewDidLoad {
@@ -102,16 +103,15 @@
     if (startLatitude == 0 && startLongitude == 0) {
         startLatitude = newLocation.coordinate.latitude;
         startLongitude = newLocation.coordinate.longitude;
-        [self updateStartPositionMarker];
     }
-    if (startLatitude != newLocation.coordinate.latitude && startLongitude != newLocation.coordinate.longitude) {
-        //old location has come
+    if(isNavigating){
         stopLatitude = newLocation.coordinate.latitude;
         stopLongitude = newLocation.coordinate.longitude;
     }else{
         startLatitude = newLocation.coordinate.latitude;
         startLongitude = newLocation.coordinate.longitude;
         [self updateStartPositionMarker];
+        isNavigating = YES;
     }
     [locationManager stopUpdatingLocation];
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:startLatitude
@@ -138,8 +138,6 @@
         swipeBtn.imageView.image = [UIImage imageNamed:@"swipe_left.png"];
     }];
     [self startNavigating];
-    
-    NSLog(@"swiped right");
 }
 
 - (IBAction)didSwipeLeft:(UISwipeGestureRecognizer *)recognizer
@@ -156,13 +154,12 @@
         swipeBtnView.backgroundColor = swipeRightColor;
         swipeBtn.imageView.image = [UIImage imageNamed:@"swipe_right.png"];
     }];
-    NSLog(@"swiped left");
     [locationManager startUpdatingLocation];
     [self stopNavigating];
 }
 #pragma mark - Start/Stop Navigation
 -(void)startNavigating{
-    
+    isNavigating = NO;
     timeTakenView.hidden = YES;
     [googleMap clear];
     [locationManager startUpdatingLocation];
@@ -177,7 +174,7 @@
     
     NSURL *url = [NSURL URLWithString:[baseUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
     
-    NSLog(@"Url: %@", url);
+//    NSLog(@"Url: %@", url);
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     NSURLSession *session = [NSURLSession sharedSession];
@@ -190,6 +187,7 @@
                 NSDictionary *firstRoute    = [routes objectAtIndex:0];
                 NSString *encodedPath       = [firstRoute[@"overview_polyline"] objectForKey:@"points"];
                 
+                isNavigating = NO;
                 [self drawPath:encodedPath];
                 [self calculateTimeTaken];
                 [self updateStopPositionMarker];
@@ -217,7 +215,7 @@
                          [NSNumber numberWithFloat:stopLongitude]];
     NSURL *url = [NSURL URLWithString:[baseUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
     
-    NSLog(@"Url: %@", url);
+//    NSLog(@"Url: %@", url);
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     NSURLSession *session = [NSURLSession sharedSession];
@@ -262,6 +260,7 @@
         mapView = marker1.map;
     });
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
